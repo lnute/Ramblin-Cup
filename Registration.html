@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>The Ramblin' Cup</title>
+        <link rel="stylesheet" href="style.css">
+        <link href='https://fonts.googleapis.com/css?family=Cinzel Decorative' rel='stylesheet'>
+        <meta charset="UTF-8">
+        
+    </head>
+
+    <body>
+        <div class="websitetitle">
+            <h1>&nbsp;<a href="Homepage.html">The Ramblin' Cup</a></h1>
+        </div>
+        
+        <div class="profileicon">
+            <a href="Settings.html">
+                <img src="SettingsGear.png" alt="Settings" style="width:53px;height:53px;border:0;">
+            </a>
+            <a href="Profile.html">
+                <img src="ProfilePicture.png" alt="Profile" style="width:55px;height:55px;border:0;">
+            </a>
+        </div>
+
+        <div class="sidenav">
+            <center><strong><u><h3> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NAVIGATION&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </h3></u></strong>
+            <a href="Dashboard.html">Team Dashboard</a>
+            <a href="Rules.html">Rules</a>
+            <a href="Events.html">Events</a>
+            <a href="Registration.html" style="color:#F4CD30">Registration</a>
+            <a href="HelpAndFAQ.html">Help and FAQ</a></center>
+        </div>
+
+        <div class="main">
+            <center><h2>Registration</h2></center>
+
+            <form>
+                <fieldset>
+
+                    <legend>Join an Event (Participant)</legend>
+
+                    <p><label>Choose an Event</label></p>
+                    <form action="/action_page.php">
+                        <input list="events" name="event">
+                        <datalist id="events">
+                            <option value="Freshman Cake Race">
+                            <option value="Humans vs. Zombies">
+                            <option value="Mini 500">
+                        </datalist>
+                    </form>
+
+                    <p>Personal Information</p>
+                    <p>
+                        <input type = "text"
+                        value = "Name" />
+
+                        <input type = "text"
+                        value = "Year" />
+
+                        <input type = "text"
+                        value = "Team" />
+                    </p>
+
+                    <p>Contact Information</p>
+                    <p>
+                        <input type = "text"
+                        value = "Phone Number" />
+                        or
+                        <input type = "text"
+                        value = "GT Email" />
+                    </p>
+                </fieldset>
+            </form>
+
+                    <br>
+
+            <form>
+                <fieldset>
+                    <legend>Enter an Event into the Ramblin' Cup</legend>
+
+                    <p><label>Name of the Event</label></p>
+                        <input type = "text"
+                        value = "Enter Name" />
+
+                    <p>Who is running this event?</p>
+                    <input type="radio" name="who" value="Myself"> Myself / Independent Group<br>
+                    <input type="radio" name="who" value="An organization">
+                        <input type = "text" value = "An Organization" /><br>
+
+                    <p>Does this event exist already?</p>
+                    <input type="radio" name="option" value="Yes"> Yes<br>
+                    <input type="radio" name="option" value="No"> No<br>
+
+                    <p>If yes, please provide a link to the weboage containing details of the event.</p>
+                    <input type = "text"
+                        value = "Link" />
+
+                    <p>If no, or there is no available webpage, please provide a short description of the event below. Please include when the event is expected to occur and the method of awarding points.</p>
+                    <textarea rows = "5" cols = "80">Description of Event</textarea>
+
+                </fieldset>
+            </form>
+        </div>
+
+
+    </body>
+</html> 
